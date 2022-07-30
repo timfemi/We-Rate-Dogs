@@ -10,7 +10,7 @@ Fully assessing and cleaning the entire dataset would require much effort, I onl
 
 The tasks for this project are broken down into:
 - Data wrangling, which consisted of:
-  > Gathering data
+  > Data gathering
   
   > Assessing data
   
@@ -21,10 +21,10 @@ The tasks for this project are broken down into:
 - Reporting on my data analyses and visualizations (act_report.pdf)
 
 ## The Data and Analysis.
-WeRateDogs provided their Twitter archive of basic tweet data (tweet ID, timestamp, text, etc.) for use on this project. The "enhanced" csv file (twitter_archive_enhanced.csv) also contains columns which were extracted programatically: the rating numerator, rating denominator, dog's name, and dog stages (doggo, floofer, pupper, and puppo) were summarised into one column as this shows the dog's growth development stage as at the time of the tweet. These columns needed to be assessed and cleaned as the extraction process from the twitter server wasn't perfect. This was due to some tweets which has been deleted by the user.
+WeRateDogs provided their Twitter archive of tweets, which contains (tweet ID, timestamp, text, etc.) to be used in this project. 
 
-I used the tweet IDs to query the Twitter API for each tweet's JSON data using Python's Tweepy library and stored each tweet's entire set of JSON data in a file called tweet_json.txt. I then read the txt file line by line into a pandas DataFrame only including the desired variables; retweet count and favorite count.
-
-Udacity also provided a link to image_predictions.tsv which was downloaded programatically using the Requests library.
+The project includes three datasets, the first dataset was a csv, (`twitter-archive-enhanced.csv`) provided by Udacity that required manual downloading, the second dataset was a tab separated value text hosted on Udacty's servers which was downloaded programmatically using the `Requests` library. The final data was gotten using twitter API. 
+In using the `tweet_ids` in the first dataset I queried the API for each tweets JSON data using the python's `Tweepy` library and stored each entire set of json data in a file called `tweet_json.txt` file. <br>
+The dog stages (doggo, floofer, pupper, and puppo) were summarised into one column. This shows the dog's growth development stage as at the time of the tweet. These columns needed to be assessed and cleaned as the extraction process from the twitter server wasn't perfect. This was due to some tweets which has been deleted by the user.
 
 I cleaned the data set using the quality and tidiness issues which I found and made some analysis on the Dog breeds which has the most likes and ratings.
