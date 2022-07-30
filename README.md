@@ -3,7 +3,7 @@
 ## Introduction
 This project was one of the projects in Udacity Data Analyst Nanodegree program. It is primarily focused on wrangling Data from a twitter user, [WeRateDogs](https://twitter.com/dog_rates) account using Python. The project is done in a Jupyter Notebook (`wrangle_act.ipynb`). Dogs are rated on this user's twitter account with entertaining tweets and analysis.
 
-## Project Details
+## Project Breakdown
 For this project, I considered only tweets (no retweets). I also noticed that not all of the original tweets in the dataset are dog ratings and some are retweets.
 
 Fully assessing and cleaning the entire dataset would require much effort, I only looked into a subset of its issues - twelve quality issues and two tidiness issues.
